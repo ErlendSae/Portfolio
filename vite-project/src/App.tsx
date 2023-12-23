@@ -1,10 +1,15 @@
 import "./App.css";
-
+import { Navbar } from "./components/Navbar";
 function App() {
+  const navItems = [
+    "Home",
+    "Projects",
+    "About Me"
+  ]
   return (
     <>
       <div></div>
-      <h1 className="bg-black">Vite + React</h1>
+      <Navbar navItems={navItems}></Navbar>
       <div className="card"></div>
     </>
   );
