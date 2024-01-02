@@ -20,8 +20,8 @@ const NavItem: FC<{ name: string }> = ({ name }) => {
 export const Navbar: FC<{ navItems: string[] }> = ({ navItems }) => {
   return (
     <div className="flex p-6 gap-5 bg-green-600 w-screen">
-      {navItems.map((name) => {
-        return <NavItem name={name} />;
+      {navItems.map((name, index) => {
+        return <NavItem key={index} name={name} />;
       })}
     </div>
   );
